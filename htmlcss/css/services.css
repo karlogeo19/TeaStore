@@ -1,0 +1,298 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+
+body {
+	display: inline-block;
+	width: 100%;
+	min-height: 100vh;
+}
+
+#container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	max-width: 2000px;
+	min-width: 320px;
+	overflow: hidden;
+}
+
+.violetWhiteShadow{
+
+    font-size:25pt;
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(252, 143, 0);
+
+}
+
+.maindivContainer{
+
+    width:100%;
+    display: flex;
+    flex-direction:row;
+}
+
+.div1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-image: url('../images/bgHome.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    width:80%;
+    height:772px;
+    float:left;
+    color:white;
+    
+    
+}
+.image-container {
+    width: 45%;    
+    text-align: center; 
+    box-sizing: border-box; 
+    position: relative; 
+    padding-bottom: 20px; 
+    margin-left:50px;
+    margin-right:50px;
+}
+.image-container > img{
+
+    max-width:100%;
+    max-height:auto;
+}
+
+.label{
+    margin-top:20px;
+    
+   
+}
+
+
+.div1 > button{
+    margin-top: 10px;
+}
+
+.div1 a{
+    text-decoration: none;
+    color:white;
+}
+
+.explore-button{
+    padding:10px 20px;
+    border-radius:10px;
+    background-color:orangered;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+.explore-button:hover{
+    background-color:#04AA6D
+}
+
+.div1logo{
+    font-size:60px;
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(252, 143, 0);
+}
+
+.div2{
+    background-color:rgb(61, 43, 25);
+    width:20%;
+    height:772px;
+    float:right;
+    border-left: 1px solid #ffffff; 
+    color:white;
+}
+
+
+.purchasesH2{
+
+    color:white;
+    text-align:center;
+    margin-top:14px;
+}
+
+body {
+    background-color:white;
+}
+
+.addPadding{
+    padding:10px;
+}
+
+.heading{
+    text-align:center;
+    padding:1px;
+    background-color:rgb(41, 23, 5);
+    width:100%;
+}
+
+.footer{
+    color:white;
+    background-color:rgb(26, 26, 26);
+    height:93px;
+    width:100%;
+    padding:10px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid rgb(252, 252, 251);
+    background-color:rgb(171, 157, 123);
+    width:100%;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active){
+    background-color: orangered;
+}
+
+li a.active{
+    color:white;
+    background-color: #04AA6D;
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown:hover .dropbtn {
+    background-color:  orangered;
+}
+  
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search-container {
+    float: right;
+}
+
+.search-container input[type="text"] {
+    padding: 7px;
+    margin-top: 8px;
+    margin-right:12px;
+    font-size: 16px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: #fff;
+}
+
+.search-container button {
+    float: right;
+    padding: 8px 10px;
+    margin-top: 8px;
+    margin-right:17px;
+    padding:7px;
+    background-color: orangered;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+.search-container button:hover {
+    background-color: #04AA6D;
+}
+
+
+
+table {
+    width: 100%;
+    height:150px;
+    border-collapse: collapse;
+    margin-top: 20px;  
+    color:white;
+}
+
+table, th, td {
+    border: 1px solid rgb(255, 255, 255); 
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+.checkout-button{
+
+    background-color: orangered;  
+    color: white;                 
+    border: none;                 
+    padding: 10px 20px;           
+    font-size: 16px;              
+    border-radius: 5px;          
+    cursor: pointer;             
+    margin-left:100px;
+}
+
+.checkout-button:hover{
+    background-color: #04AA6D;
+}
+
